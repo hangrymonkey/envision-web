@@ -8,7 +8,7 @@ const HomeReachOut = () => {
       <h1 className="mt-2 mb-2 text-2xl text-black font-semibold">
         In a hurry? Let us call you back
       </h1>
-      <input type="text" placeholder="Enter your phone number" className="rounded-xl border-2 border-gray-400 p-2 mx-5" /> 
+      <input type="text" placeholder="Enter your phone number" className="rounded-xl border-2 border-gray-400 p-2 mx-5 text-xs w-64 text-center" /> 
       
       <Link href="/submit" className={buttonVariants()}>
         Submit

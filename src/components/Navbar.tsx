@@ -1,5 +1,5 @@
 import Link from "next/link";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import MaxWidthWrapper2 from "./MaxWidthWrapper2";
 import { buttonVariants } from "./ui/button";
 
 const Navbar = () => {
@@ -8,9 +8,9 @@ const Navbar = () => {
 
   return (
     <nav className="z-[100] h-14 inset-x-0 top-0 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
-      <MaxWidthWrapper>
+      <MaxWidthWrapper2>
         <div className="flex h-14 items-center justify-between border-b border-zinc-200">
-          <Link href="/" className="flex z-40 font-semibold">
+          <Link href="/" className="flex z-40 font-semibold text-xl">
             EduOwl
           </Link>
 
@@ -19,7 +19,7 @@ const Navbar = () => {
               <Link
                 href="#story"
                 className={buttonVariants({
-                  size: "sm",
+                  size: "lg",
                   variant: "ghost",
                 })}
               >
@@ -29,7 +29,7 @@ const Navbar = () => {
               <Link
                 href="#different"
                 className={buttonVariants({
-                  size: "sm",
+                  size: "lg",
                   variant: "ghost",
                 })}
               >
@@ -39,7 +39,7 @@ const Navbar = () => {
               <Link
                   href="#whytuition"
                   className={buttonVariants({
-                    size: "sm",
+                    size: "lg",
                     variant: "ghost",
                   })}
                 >
@@ -49,7 +49,7 @@ const Navbar = () => {
               <Link
                   href="#getstarted"
                   className={buttonVariants({
-                    size: "sm",
+                    size: "lg",
                     className: "hidden sm:flex items-center gap-1",
                   })}
                 >
@@ -87,7 +87,7 @@ const Navbar = () => {
             )}
           </div>
         </div>
-      </MaxWidthWrapper>
+      </MaxWidthWrapper2>
     </nav>
   );
 };

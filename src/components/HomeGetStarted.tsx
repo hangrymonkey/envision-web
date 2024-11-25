@@ -1,33 +1,34 @@
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { ClipboardPen, ThumbsUp,  UserRoundPlus } from 'lucide-react';
+import Image from "next/image";
 
 const steps = [
   {
     name: 'REQUEST',
     text: 'STEP 1', 
-    Icon: ClipboardPen,
+    Icon: '/whatsapp.png',
     description:
-      'For a suitable tutor via a 3 minute call',
+      'For a suitable tutor, just drop us a text!',
   },
   {
     name: 'RECEIVE',
     text: 'STEP 2', 
-    Icon: ThumbsUp,
+    Icon: '/owlthumbsup.png',
     description:
-      'Tutor recommendation within 24 hours',
+      'We will reach out and follow up with you!',
   },
   {
     name: 'SELECT',
     text: 'STEP 3', 
-    Icon: UserRoundPlus,
+    Icon: '/owltexting.png',
     description:
-      "A suitable tutor to start your first lesson",
+      "We will confirm the lesson details and tutor wtih you.",
   },
 ]
 const HomeGetStarted = () => {
   return (
     <section
-      className="border-t col-start-1 col-span-3 lg:col-start-1 lg:col-span-2 lg:pr-6 lg:pt-4"
+      className="col-start-1 col-span-3 lg:col-start-1 lg:col-span-2 lg:pr-6 lg:pt-4"
       id="getstarted"
     >
       <MaxWidthWrapper>
@@ -41,7 +42,7 @@ const HomeGetStarted = () => {
                 <p className="mt-4  text-gray-500 text-center"> {step.text} </p>
                 <div className='mt-4 md:flex-shrink-0 flex justify-center'>
                   <div className='h-16 w-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-900'>
-                    {<step.Icon className='w-1/3 h-1/3' />}
+                      <Image src={step.Icon} alt='logo' width={118} height={18} className='object-contain' />
                   </div>
                 </div>
 
